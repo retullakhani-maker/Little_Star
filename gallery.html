@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Little Star Nursery – Moments & Milestones</title>
+  <meta name="description" content="View our vibrant gallery of school activities, festivals, and special functions at Little Star Nursery, Surat." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html#home" class="nav__logo">
+        <img src="assets/images/logo.png" alt="Little Star Nursery Logo" class="nav__logo-img" />
+      </a>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html#home" class="nav__link">Home</a></li>
+        <li><a href="index.html#about" class="nav__link">About Us</a></li>
+        <li><a href="index.html#programs" class="nav__link">Programs</a></li>
+        <li><a href="gallery.html" class="nav__link active">Gallery</a></li>
+        <li><a href="index.html#branches" class="nav__link">Branches</a></li>
+        <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+        <li>
+          <a href="tel:+919099520954" class="nav__phone">
+            <i class="fas fa-phone-alt"></i> +91 90995 20954
+          </a>
+        </li>
+        <li><a href="index.html#contact" class="btn btn--primary nav__cta"><i class="fas fa-star"></i> Enroll Now</a></li>
+      </ul>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== GALLERY HERO ========== -->
+    <section class="gallery-hero">
+      <div class="hero__circle hc-1"></div>
+      <div class="hero__circle hc-4"></div>
+      <div class="container text-center">
+        <span class="sec-badge badge-red"><i class="fas fa-camera-retro"></i> Our Memories</span>
+        <h1 class="gallery-hero__title">Moments & <span class="sh-accent">Milestones</span> ⭐</h1>
+        <p class="gallery-hero__sub">Explore the joyful world of Little Star Nursery. Our vibrant activities, colorful festivals, and special celebrations.</p>
+      </div>
+    </section>
+
+    <!-- ========== GALLERY MAIN ========== -->
+    <section class="gallery-page-section">
+      <div class="container">
+        <!-- Category Filter -->
+        <div class="gallery-filter-wrap" data-aos="fade-up">
+          <button class="gallery-filter-btn active" data-filter="all">All</button>
+          <button class="gallery-filter-btn" data-filter="activity">Activities</button>
+          <button class="gallery-filter-btn" data-filter="festival">Festivals</button>
+          <button class="gallery-filter-btn" data-filter="function">Functions</button>
+        </div>
+
+        <div class="gallery-full-grid" id="galleryGrid">
+          <!-- Item 1: activity -->
+          <div class="gallery-item activity" data-aos="fade-up">
+            <div class="gi-inner">
+              <img src="assets/images/nursery_gallery_activity.png" alt="Art & Craft" />
+              <div class="gi-overlay">
+                <span class="gi-tag tag-blue">Activity</span>
+                <h4>Creative Colors</h4>
+                <p>Exploring art and craft</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: festival (VIDEO) -->
+          <a href="https://www.youtube.com/watch?v=example" target="_blank" class="gallery-item festival video-item" data-aos="fade-up">
+            <div class="gi-inner">
+              <img src="assets/images/class-1.jpg" alt="Festival Celebration" />
+              <div class="gi-video-badge"><i class="fas fa-play"></i> Watch Video</div>
+              <div class="gi-overlay">
+                <span class="gi-tag tag-orange">Festival</span>
+                <h4>Janmashtami Fest</h4>
+                <p>Divine celebrations (Video)</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Item 3: function -->
+          <div class="gallery-item function" data-aos="fade-up">
+            <div class="gi-inner">
+              <img src="assets/images/class-2.jpg" alt="Annual Day" />
+              <div class="gi-overlay">
+                <span class="gi-tag tag-purple">Function</span>
+                <h4>Annual Function</h4>
+                <p>Shining on the stage</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: activity -->
+          <div class="gallery-item activity" data-aos="fade-up">
+            <div class="gi-inner">
+              <img src="assets/images/class-3.jpg" alt="Science Explored" />
+              <div class="gi-overlay">
+                <span class="gi-tag tag-blue">Activity</span>
+                <h4>Little Scientists</h4>
+                <p>Learning through experiments</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: festival -->
+          <div class="gallery-item festival" data-aos="fade-up">
+            <div class="gi-inner">
+              <img src="assets/images/class-4.jpg" alt="Navratri Celebration" />
+              <div class="gi-overlay">
+                <span class="gi-tag tag-orange">Festival</span>
+                <h4>Navratri Garba</h4>
+                <p>Traditional joy and dance</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6: activity (VIDEO) -->
+          <a href="https://www.facebook.com/example" target="_blank" class="gallery-item activity video-item" data-aos="fade-up">
+            <div class="gi-inner">
+              <img src="assets/images/nursery_gallery_playground.png" alt="Outdoor Fun" />
+              <div class="gi-video-badge"><i class="fas fa-play"></i> Watch Video</div>
+              <div class="gi-overlay">
+                <span class="gi-tag tag-blue">Activity</span>
+                <h4>Outdoor Fun</h4>
+                <p>Nurturing physical growth (Video)</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Item 7: function -->
+          <div class="gallery-item function" data-aos="fade-up">
+            <div class="gi-inner">
+              <img src="assets/images/littlestar.jpg" alt="Grandparents Day" />
+              <div class="gi-overlay">
+                <span class="gi-tag tag-purple">Function</span>
+                <h4>Grandparents Day</h4>
+                <p>Celebrating special bonds</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 8: festival (VIDEO) -->
+          <a href="https://www.instagram.com/example" target="_blank" class="gallery-item festival video-item" data-aos="fade-up">
+            <div class="gi-inner">
+              <img src="assets/images/blog-1.jpg" alt="Diwali Lights" />
+              <div class="gi-video-badge"><i class="fas fa-play"></i> Watch Video</div>
+              <div class="gi-overlay">
+                <span class="gi-tag tag-orange">Festival</span>
+                <h4>Diwali Celebration</h4>
+                <p>Spreading lights and love (Video)</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-rainbow-bar">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="footer-main">
+      <div class="container footer-grid">
+        <div class="footer-brand-col">
+          <img src="assets/images/logo.png" alt="Little Star Nursery" class="footer-logo" />
+          <p>Nurturing hearts and minds since 2010. Join the best nursery for your child's growth and bright future in
+            Surat.</p>
+          <div class="footer-social-row">
+            <a href="#" class="fsoc fsoc-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="fsoc fsoc-ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="fsoc fsoc-yt" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/919099520954" class="fsoc fsoc-wa" aria-label="WhatsApp"><i
+                class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="index.html#programs"><i class="fas fa-chevron-right"></i> Programs</a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="index.html#branches"><i class="fas fa-chevron-right"></i> Branches</a></li>
+            <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Programs</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#programs"><i class="fas fa-chevron-right"></i> Play Group</a></li>
+            <li><a href="index.html#programs"><i class="fas fa-chevron-right"></i> Nursery</a></li>
+            <li><a href="index.html#programs"><i class="fas fa-chevron-right"></i> Jr. Kindergarten</a></li>
+            <li><a href="index.html#programs"><i class="fas fa-chevron-right"></i> Sr. Kindergarten</a></li>
+            <li><a href="index.html#programs"><i class="fas fa-chevron-right"></i> Activity Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-list">
+            <li><i class="fas fa-phone-alt"></i> +91 90995 20954</li>
+            <li><i class="fas fa-envelope"></i> littlestar.eng7@gmail.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> Surat, Gujarat, India</li>
+          </ul>
+          <a href="index.html#contact" class="footer-enroll-cta">
+            <i class="fas fa-graduation-cap"></i> Enroll Now
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Little Star Nursery. All rights reserved. Made with ❤️ for little ones.</p>
+        <div>
+          <a href="#">Privacy Policy</a> &nbsp;|&nbsp;
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+    <button class="fab-btn fab-top" id="scroll-top-btn" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <a href="https://wa.me/919099520954" class="fab-btn fab-wa" target="_blank" aria-label="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <span class="toast__icon"><i class="fas fa-check-circle"></i></span>
+    <span class="toast__text">Message sent! We'll be in touch soon.</span>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+    // Gallery Filter Logic
+    const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Active status
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        galleryItems.forEach(item => {
+          if (filterValue === 'all' || item.classList.contains(filterValue)) {
+            item.style.display = 'block';
+            setTimeout(() => { item.style.opacity = '1'; item.style.transform = 'scale(1)'; }, 10);
+          } else {
+            item.style.opacity = '0';
+            item.style.transform = 'scale(0.8)';
+            setTimeout(() => { item.style.display = 'none'; }, 300);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
