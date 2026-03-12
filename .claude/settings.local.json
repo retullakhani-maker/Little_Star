@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"E:\\\\localhost\\\\little star nursery\\\\assets\\\\images\\\\\" 2>/dev/null || echo \"No images folder found\")",
+      "Bash(mkdir -p 'E:\\\\localhost\\\\school\\\\assets\\\\images' && robocopy 'E:\\\\localhost\\\\little star nursery\\\\assets\\\\images' 'E:\\\\localhost\\\\school\\\\assets\\\\images' /E /NFL /NDL /NJH /NJS 2>/dev/null; echo \"Done\")",
+      "Bash(cmd /c \"mkdir \\\\\"E:\\\\localhost\\\\school\\\\assets\\\\images\\\\\" 2>nul & xcopy /E /I /Y \\\\\"E:\\\\localhost\\\\little star nursery\\\\assets\\\\images\\\\\" \\\\\"E:\\\\localhost\\\\school\\\\assets\\\\images\\\\\"\")",
+      "Bash(cmd /c \"xcopy /E /I /Y \\\\\"E:\\\\\\\\localhost\\\\\\\\little star nursery\\\\\\\\assets\\\\\\\\images\\\\\" \\\\\"E:\\\\\\\\localhost\\\\\\\\school\\\\\\\\assets\\\\\\\\images\\\\\"\")",
+      "Bash(cmd /c \"dir \\\\\"E:\\\\\\\\localhost\\\\\\\\school\\\\\\\\assets\\\\\\\\images\\\\\"\")",
+      "Bash(cmd /c \"if not exist \\\\\"E:\\\\\\\\localhost\\\\\\\\school\\\\\\\\assets\\\\\\\\images\\\\\" mkdir \\\\\"E:\\\\\\\\localhost\\\\\\\\school\\\\\\\\assets\\\\\\\\images\\\\\"\"\ncmd /c \"copy \\\\\"E:\\\\\\\\localhost\\\\\\\\little star nursery\\\\\\\\assets\\\\\\\\images\\\\\\\\logo.png\\\\\" \\\\\"E:\\\\\\\\localhost\\\\\\\\school\\\\\\\\assets\\\\\\\\images\\\\\\\\\\\\\" && echo OK\")",
+      "Bash(powershell -Command \"New-Item -ItemType Directory -Force -Path 'E:\\\\localhost\\\\school\\\\assets\\\\images' | Out-Null; Copy-Item -Path 'E:\\\\localhost\\\\little star nursery\\\\assets\\\\images\\\\*' -Destination 'E:\\\\localhost\\\\school\\\\assets\\\\images\\\\' -Force; Write-Host 'Copied'; Get-ChildItem 'E:\\\\localhost\\\\school\\\\assets\\\\images' | Select-Object Name\")",
+      "Bash(powershell -Command \"Get-ChildItem 'E:\\\\localhost\\\\school' -Recurse | Select-Object FullName, Length\")"
+    ]
+  }
+}
