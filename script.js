@@ -2,6 +2,7 @@
    LITTLE STAR NURSERY – SCRIPT
    ============================================ */
 
+
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ---- Sticky header ---- */
