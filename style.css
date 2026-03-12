@@ -2316,9 +2316,11 @@ h5 {
     left: 0;
     right: 0;
     background: white;
+    display: flex;
     flex-direction: column;
-    padding: 20px 24px;
-    gap: 6px;
+    align-items: stretch;
+    padding: 24px;
+    gap: 10px;
     box-shadow: var(--shadow-lg);
     transform: translateY(-110%);
     opacity: 0;
@@ -2343,7 +2345,8 @@ h5 {
   .nav__cta {
     width: 100%;
     justify-content: center;
-    margin: 4px 0 0;
+    margin: 8px 0 0;
+    padding: 14px 20px;
   }
 
   /* Hero */
@@ -2426,7 +2429,8 @@ h5 {
   /* Gallery */
   .gallery-mosaic {
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 160px;
+    grid-auto-rows: 200px;
+    gap: 12px;
   }
   .gm-large {
     grid-row: span 1;
@@ -2508,6 +2512,7 @@ h5 {
   }
   .gallery-mosaic {
     grid-template-columns: 1fr;
+    grid-auto-rows: 250px;
   }
   .gm-large {
     grid-row: span 1;
